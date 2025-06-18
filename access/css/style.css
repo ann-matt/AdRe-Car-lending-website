@@ -1,0 +1,131 @@
+@import url('blocks/header.css');
+@import url('blocks/modal.css');
+@import url('blocks/home.css');
+
+@font-face {
+    font-family: 'Motserrat-Bold', sans-serif;
+    src: url('../fonts/Montserrat-Bold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'Montserrat-Regular', sans-serif;
+    src: url('../fonts/Montserrat-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'KosugiMaru-Regular', sans-serif;
+    src: url('../fonts/KosugiMaru-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Rubik-Regular', sans-serif;
+    src: url('../fonts/Rubik-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Oswald-SemiBold', sans-serif;
+    src: url('../fonts/Oswald-SemiBold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 600;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --text-color-black: rgb(0, 0, 0);
+    --text-color-white: rgb(255, 255, 255);
+    --bg-orange: rgb(253, 122, 0);
+    --bg-white: rgb(255, 255, 255);
+    
+    --main-font: 'Rubik-Regular', sans-serif;
+    --title-font: 'Montserrat-Bold', sans-serif;
+    --title-font-two: 'Oswald-SemiBold', sans-serif;
+
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .9rem;
+    --small-font-size: .8rem;
+
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    --font-bold: 700;
+    --font-extra-bold: 900;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: var(--bg-white);
+    font-family: var(--main-font);
+    /* position: relative; */
+    
+}
+main {
+    overflow: hidden;
+}
+
+
+a {
+    text-decoration: none;
+    color: var(--text-color-black);
+}
+li {
+    list-style-type: none;
+}
+/* img {
+    width: 100%;
+}
+ */
+.container {
+    max-width: 1220px;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+}
+
+.flex {
+    display: flex;
+}
+
+.section {
+    padding-block: 5rem 1rem;
+}
+
+.section__title,
+.section__subtitle {
+    text-align: center;
+}
+
+.section__title {
+    font-size: var(--h1-font-size);
+    font-weight: var(--font-extra-bold);
+    color: var(--text-color-black);
+    margin-bottom: 3rem;
+}
+.section__subtitle {
+    display: block;
+    font-size: var(--small-font-size);
+    font-weight: var(--font-semi-bold);
+    color: var(--text-color-black);
+    margin-bottom: .5rem;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+video {
+  max-width: 100%;
+}

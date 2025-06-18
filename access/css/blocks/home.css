@@ -1,0 +1,120 @@
+:root {
+    --bgg-orange: rgba(233, 127, 29, 0.89);
+}
+.home {
+    position: relative;
+    /* background-color: var(--bgg-orange); */
+    height: 100vh;
+
+}
+.home__bg,
+.home__gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+}
+.home__bg {
+    object-fit: cover;
+    object-position: center;
+
+}
+.home__gradient {
+    background: linear-gradient(180deg,
+                hsla(25, 70%, 55%, 0) 80%,
+                hsl(25, 70%, 55%) 100%);
+}
+.home__text {
+    position: absolute;
+    top: 15rem;
+    justify-self: center;
+    text-align: center;
+    font: var(--title-font-two);
+    
+}
+.home__subtitle {
+
+    font-family: 'KosugiMaru-Regular', sans-serif;
+    letter-spacing: .15rem;
+    font-size: 0.9rem;
+     font-weight: 700;
+}
+
+.home__title {
+    font-family: 'Oswald-SemiBold', sans-serif;
+    font-weight: var(--font-extra-bold);
+    letter-spacing: .6rem;
+    color: var(--text-color-white);
+}
+.home__button {
+    position: absolute;
+    bottom: 5rem;
+    justify-self: center;
+    color: var(--text-color-white);
+
+
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items:center; 
+    padding-top: 1rem;
+    z-index: 1;
+    
+
+    /* display: grid;
+    place-content: center;
+    text-align: center;
+    padding-top: 1rem;
+    z-index: 5; */
+
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 94px;
+    height: 94px;
+}
+
+.home__button span {
+    font-weight: var(--font-semi-bold);
+}
+.font__button i {
+    font-size: 1.5rem;
+}
+
+.home__img {
+width: 300px;
+margin: 0 auto;
+}
+.home__card {
+    width: 500px;
+    margin: 0 auto;
+}
+
+
+.swiper {
+    margin-inline: initial;
+    align-self: center;
+    margin-bottom: 1rem;
+}
+.swiper-pagination-bullets.swiper-pagination-horizontal{
+    height: max-content;
+    top: 30rem;
+    display: flex;
+    justify-content: center;
+    column-gap: 1.45rem;
+}
+.swiper-pagination-bullet {
+     background: none !important;
+  color: white !important;
+  opacity: 1 !important;
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-semi-bold);
+  border: none !important; 
+  box-shadow: none !important;
+  transition: color 0.3s ease;
+}
+.swiper-pagination-bullet-active {
+    color: black !important;
+}
