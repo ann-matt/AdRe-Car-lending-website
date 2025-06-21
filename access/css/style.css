@@ -1,7 +1,7 @@
 @import url('blocks/header.css');
 @import url('blocks/modal.css');
 @import url('blocks/home.css');
-@import url('about.css');
+@import url('blocks/abouts.css');
 
 @font-face {
     font-family: 'Motserrat-Bold', sans-serif;
@@ -43,7 +43,7 @@
 :root {
     --text-color-black: rgb(0, 0, 0);
     --text-color-white: rgb(255, 255, 255);
-    --bg-orange: rgb(253, 122, 0);
+    --bg-orange: rgba(253, 122, 0, 0.781);
     --bg-white: rgb(255, 255, 255);
     
     --main-font: 'Rubik-Regular', sans-serif;
@@ -112,8 +112,9 @@ li {
 .section__title {
     font-size: var(--h1-font-size);
     font-weight: var(--font-extra-bold);
-    color: var(--text-color-black);
+    /* color: var(--text-color-black); */
     margin-bottom: 3rem;
+    margin-top: 3rem;
 }
 .section__subtitle {
     display: block;
